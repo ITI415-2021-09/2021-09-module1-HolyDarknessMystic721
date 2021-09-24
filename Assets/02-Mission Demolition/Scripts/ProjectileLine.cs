@@ -91,16 +91,18 @@ public class ProjectileLine : MonoBehaviour {
                 if (FollowCam.POI.tag == "Projectile") {
                     poi = FollowCam.POI;
                 } else {
-                    return; // return if we do not get POI
+                    return; // return if we do not get poi
                 }
+            } else {
+                return; //return if we didn;t find a poi.
             }
 
+        }
             //If there is a poi, it's loc is added every FixedUpdate
-            AddPoint();
-            if (FollowCam.POI == null) {
-                //once followCam.POI is null, make the local poi is null too
-                poi = null;
-            }
+        AddPoint();
+        if (FollowCam.POI == null) {
+            //once followCam.POI is null, make the local poi is null too
+            poi = null;
         }
     }
 }
