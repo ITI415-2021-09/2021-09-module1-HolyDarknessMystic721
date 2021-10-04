@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Apple
   - Projectile
+  - Collectable
+  - Goal
+  - Enemies
   layers:
   - Default
   - TransparentFX
