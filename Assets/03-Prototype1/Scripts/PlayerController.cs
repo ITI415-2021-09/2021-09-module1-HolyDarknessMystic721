@@ -81,7 +81,7 @@ public class PlayerController : MonoBehaviour {
         if (collidedWith.tag == "Enemies") {
             Destroy(collidedWith);
 
-            score = score - 1;
+            score = score - 50;
 
             SetCountText();
         }
